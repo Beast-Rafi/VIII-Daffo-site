@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+body{
+    color: #181818;
+    background-color: #a8a8a8;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/background.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.header nav ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.header nav ul li{
+    padding: 10px;
+    list-style: none;
+}
+.header nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #181818;
+}
+.welcome-scrn span{
+    color: rgb(1, 170, 1);
+    font-size: 40px;
+    text-align: center;
+}
+.welcome-scrn{
+    padding-left: 10px;
+    position: absolute;
+    top: 30%;
+    left: 20%; 
+
+}
+.card
+{
+    border:5px solid #490490 ;
+    display: inline-block;
+    margin: 10px 35px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #181818;
+}
+.card h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 4px 0px;
+}
+.card p 
+{
+    font-size: 1em;
+    text-align: center;
+}
+
+/*-----------------------Students Tab------------------------------*/
+.grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+.card-std
+{
+    margin: 2px;
+    align-items: center;
+
+}
+.card-std img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.card-std h3{
+    text-align: center;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px)
+{
+    .welcome-scrn span{
+        font-size: 100px;
+    }
+    .welcome-scrn{
+        font-size: 2em;
+    }
+    .header nav ul li{
+        padding: 20px;
+    }
+    .header nav ul li a{
+        font-size: 30px;
+    }
+}
